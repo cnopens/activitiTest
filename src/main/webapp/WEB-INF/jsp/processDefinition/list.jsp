@@ -21,6 +21,7 @@
 						<td>${processDefinition.name}</td>
 						<td>
 							<button type="submit">Iniciar</button>
+							<a href="${linkTo[ProcessDefinitionController].form[processDefinition.id]}">Formulário</a>
 						</td>
 					</tr>
 					</form>
