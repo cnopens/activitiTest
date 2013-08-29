@@ -16,9 +16,14 @@
 			</thead>
 			<tbody>
 				<c:forEach var="processDefinition" items="${processDefinitions}">
+					<form action="${linkTo[ProcessDefinitionController].start[processDefinition.id]}" method="POST">
 					<tr>
 						<td>${processDefinition.name}</td>
+						<td>
+							<button type="submit">Iniciar</button>
+						</td>
 					</tr>
+					</form>
 				</c:forEach>
 			</tbody>
 		</table>
